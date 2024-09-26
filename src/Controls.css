@@ -1,0 +1,7 @@
+.control_button {
+  background-color: rgb(131, 37, 79);
+  color: rgb(255, 171, 92);
+
+  padding: 0rem 1rem;
+  border-radius: 0.5rem;
+}

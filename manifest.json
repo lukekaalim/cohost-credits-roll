@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Borderify",
+  "version": "1.0",
+
+  "description": "Adds a red border to all webpages matching mozilla.org.",
+
+  "icons": {
+    "48": "icons/eggbug-48.png"
+  },
+
+  "web_accessible_resources": [
+    "resources/cohost.svg",
+    "resources/staff-roll.mp3",
+    "resources/here-i-am.mp3",
+    "resources/here-i-am.ogg"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://cohost.org/rc/content/credits"],
+      "js": ["dist/cohost-credits-roll.js"],
+      "css": ["dist/style.css"]
+    }
+  ]
+}
