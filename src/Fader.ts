@@ -22,6 +22,10 @@ export const Fader: FunctionComponent<FaderProps> = ({ children, player, enter, 
       const fadeIn = (playbackMilliseconds - enter) / fadeDuration;
       const fadeOut =  (1 - (playbackMilliseconds - exit)) / fadeDuration;
       const fade = Math.min(fadeIn, fadeOut);
+
+      if (fade < 1)
+        el.style.pointerEvents = 'none';
+
       el.style.opacity = (fade) * 100 + '%';
     }).unsubscribe
   }, [player]);

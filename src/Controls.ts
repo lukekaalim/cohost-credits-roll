@@ -10,7 +10,7 @@ const styles = {
     bottom: 0,
     left: 0,
     right: 0,
-    height: '2rem',
+    height: '3rem',
     display: 'flex',
     gap: '2rem',
     margin: '0 2rem'
@@ -91,7 +91,7 @@ export const Controls = ({ player, audioRef }: ControlsProps) => {
       min: 0,
       max: duration / 1000,
       step: 0.1,
-      value: player.getCurrentPlaybackMilliseconds(),
+      value: player.getCurrentPlaybackMilliseconds() / 1000,
       ref,
       onInput
     }),

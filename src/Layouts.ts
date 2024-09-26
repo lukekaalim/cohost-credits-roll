@@ -2,7 +2,10 @@ import { FunctionalComponent, h } from "preact"
 
 const styles = {
   center: {
-    margin: 'auto'
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: `translate(-50%, -50%)`
   }
 } as const;
 
