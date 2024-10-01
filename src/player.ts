@@ -50,6 +50,7 @@ export const useAnimationPlayer = (): AnimationPlayer => {
       };
       let id = requestAnimationFrame(animateFrame);
       return () => {
+        animate();
         cancelAnimationFrame(id);
       }
     }

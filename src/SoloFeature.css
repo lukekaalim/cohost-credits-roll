@@ -1,0 +1,104 @@
+.solo-feature {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.solo-feature > .left-pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.solo-feature > .right-pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.floating-profile > h2 {
+  text-align: center;
+}
+
+.floating-profile > a, .floating-details a {
+  color: rgb(255, 171, 92);
+}
+.floating-profile > a:hover, .floating-details a {
+  text-decoration: underline;
+}
+
+.floating-profile {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(131, 37, 79);
+  padding: 2rem;
+  border-radius: 1rem;
+
+  text-align: center;
+}
+
+.floating-profile > img {
+  border-radius: 1rem;
+}
+
+
+.floating-profile > .subtitle {
+  margin-top: 1rem;
+
+  background-color: rgb(255, 171, 92);
+  color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.banner {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: max-content;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner > img {
+  height: 100%;
+  max-width: none;
+}
+
+.floating-details {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+  flex: 1;
+
+  gap: 1rem;
+
+  max-width: 32rem;
+}
+
+.floating-details > nav {
+  background-color: rgb(131, 37, 79);
+  padding: 2rem;
+  border-radius: 1rem;
+
+  list-style: none;
+}
+.floating-details > nav .link-title {
+  font-weight: bold;
+}

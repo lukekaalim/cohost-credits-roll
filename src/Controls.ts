@@ -13,7 +13,6 @@ const styles = {
     height: '3rem',
     display: 'flex',
     gap: '2rem',
-    margin: '0 2rem'
   },
   scrubBar: {
     flex: 1,
@@ -81,7 +80,7 @@ export const Controls = ({ player, audioRef }: ControlsProps) => {
   if (!duration)
     return;
 
-  return h('div', { style: styles.container }, [
+  return h('div', { style: styles.container, class: 'controls-container' }, [
     h('button', { class: classes.button, onClick: onPlayClick }, 'Play'),
     h('button', { onClick: onStopClick }, 'Stop'),
     h('time', { style: styles.time, ref: timeRef }, getTimeText()),

@@ -5,3 +5,8 @@
   padding: 0rem 1rem;
   border-radius: 0.5rem;
 }
+
+.controls-container {
+  background-color: rgba(0, 0, 0, 0.634);
+  padding: 0.2rem 2rem;
+}
